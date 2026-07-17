@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cats &amp; Rats</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="bar">
+    <div class="brand">
+      <img src="icons/icon48.png" width="28" height="28" alt="" />
+      <span>Cats &amp; Rats</span>
+    </div>
+    <div class="actions">
+      <button type="button" id="btnReload" class="btn ghost" title="Rescan page">Reload</button>
+      <button type="button" id="btnSelectAll" class="btn ghost">Select all</button>
+      <button type="button" id="btnDownload" class="btn primary" disabled>Download</button>
+    </div>
+  </header>
+
+  <div id="status" class="status">Open a website tab, then click Reload.</div>
+
+  <main id="grid" class="grid" aria-live="polite"></main>
+
+  <footer class="foot">
+    <span id="count">0 selected</span>
+    <label class="min">
+      Min px
+      <input type="number" id="minSize" value="64" min="0" step="8" />
+    </label>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "cats-and-rats",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cats & Rats browser extension — cleanroom, original source",
+  "scripts": {
+    "pack:chrome": "node scripts/pack-chrome.mjs",
+    "pack:firefox": "node scripts/pack-firefox.mjs",
+    "pack": "npm run pack:chrome && npm run pack:firefox",
+    "lint:manifest": "node -e \"JSON.parse(require('fs').readFileSync('src/manifest.json','utf8')); console.log('manifest ok')\""
+  }
+}

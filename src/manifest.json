@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "Cats & Rats",
+  "short_name": "CatsRats",
+  "version": "1.0.1",
+  "description": "Find and download images from any page. Built for team Cats & Rats.",
+  "homepage_url": "https://github.com/example/cats-and-rats",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Cats & Rats",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_area": "navbar"
+  },
+  "sidebar_action": {
+    "default_title": "Cats & Rats",
+    "default_panel": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon48.png",
+      "64": "icons/icon128.png"
+    },
+    "open_at_install": true
+  },
+  "background": {
+    "service_worker": "background.js",
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "cats-and-rats@local",
+      "strict_min_version": "121.0"
+    }
+  }
+}
