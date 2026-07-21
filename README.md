@@ -1,5 +1,7 @@
 # Cats & Rats
 
+[github.com/tretuttle/cats-and-rats](https://github.com/tretuttle/cats-and-rats)
+
 Find images on the active page, select, download. Works in **Chrome / Edge / Brave** (toolbar popup) and **Firefox / Zen** (popup + sidebar).
 
 This package is an MV3 extension you can:
@@ -51,7 +53,7 @@ Outputs:
 1. [AMO Developer Hub](https://addons.mozilla.org/developers/)
 2. Submit new add-on → upload `dist/cats-and-rats-firefox.zip`
 3. Set gecko id in `src/manifest.json` → `browser_specific_settings.gecko.id`  
-   **Change `cats-and-rats@local` to your real email-style id before listed publish**, e.g. `cats-and-rats@yourdomain.com`
+   **Change to your real email-style id before listed publish** (currently configured as `trent@trents.tech`).
 4. Source code is this repo (AMO may request it for listed)
 5. Submit
 
@@ -62,7 +64,7 @@ Edit `src/manifest.json`:
 ```json
 "browser_specific_settings": {
   "gecko": {
-    "id": "cats-and-rats@YOURDOMAIN.com",
+    "id": "trent@trents.tech",
     "strict_min_version": "121.0"
   }
 }
@@ -87,10 +89,14 @@ cats-and-rats/
   store/               ← listing copy (optional)
 ```
 
-## Features (v1.0.0)
+## Features (v1.0.4)
 
 - Scan active tab for `<img>`, srcset, CSS backgrounds, og:image
 - Grid UI, select / select-all, min size filter
+- Sort: page order / largest / smallest / file name
+- View density: 1 / 2 / 3 columns
+- Light / dark theme — follows system, manual toggle in header
+- All preferences persisted via `chrome.storage`
 - Download via `chrome.downloads` into `CatsAndRats/`
 - Cream / rust brand, full-height sidebar-friendly layout
 - Toolbar popup always set (no dead button)
@@ -99,4 +105,3 @@ cats-and-rats/
 
 - ZIP multi-download  
 - Right-click context menu  
-- Options page / default min size  

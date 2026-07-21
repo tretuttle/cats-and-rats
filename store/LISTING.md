@@ -29,7 +29,7 @@ Discover and download images from the current web page.
 
 ## Support email
 
-(you fill this in)
+trent@trents.tech
 
 ## Screenshots needed
 
