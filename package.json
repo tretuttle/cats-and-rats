@@ -1,8 +1,17 @@
 {
   "name": "cats-and-rats",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "private": true,
   "description": "Cats & Rats browser extension — cleanroom, original source",
+  "author": "Trent <trent@trents.tech>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tretuttle/cats-and-rats.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tretuttle/cats-and-rats/issues"
+  },
+  "homepage": "https://github.com/tretuttle/cats-and-rats#readme",
   "scripts": {
     "pack:chrome": "node scripts/pack-chrome.mjs",
     "pack:firefox": "node scripts/pack-firefox.mjs",

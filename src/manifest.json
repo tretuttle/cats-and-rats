@@ -2,9 +2,10 @@
   "manifest_version": 3,
   "name": "Cats & Rats",
   "short_name": "CatsRats",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Find and download images from any page. Built for team Cats & Rats.",
-  "homepage_url": "https://github.com/example/cats-and-rats",
+  "author": "Trent <trent@trents.tech>",
+  "homepage_url": "https://github.com/tretuttle/cats-and-rats",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -46,7 +47,7 @@
   ],
   "browser_specific_settings": {
     "gecko": {
-      "id": "cats-and-rats@local",
+      "id": "trent@trents.tech",
       "strict_min_version": "121.0"
     }
   }
